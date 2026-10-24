@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#ffe9ed">
+<title>Our Little October Journey ❤️</title>
+<style>
+:root{--wine:#95153d;--berry:#c52258;--pink:#ffe7ed;--cream:#fff8f1;--peach:#ffdacd;--ink:#642a40;--muted:#8e6877;--line:#f5c6d2;--shadow:0 18px 45px #9c31551b}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;min-height:100vh;color:var(--ink);font-family:ui-rounded,"Trebuchet MS",system-ui,-apple-system,sans-serif;background:radial-gradient(circle at 10% 12%,#fff 0 2px,transparent 3px),radial-gradient(circle at 85% 25%,#f5bdca 0 1px,transparent 2px),linear-gradient(135deg,#fff6ee,#ffe8ed 48%,#fff4ee);background-size:35px 35px,27px 27px,auto;overflow-x:hidden}
+button{font:inherit;cursor:pointer}.app{width:min(100%,720px);margin:auto;min-height:100vh;padding:18px 15px 34px;position:relative}.topbar{display:flex;align-items:center;justify-content:space-between;gap:10px;margin:0 auto 14px;max-width:560px}.brand{font-family:Georgia,serif;font-weight:bold;color:var(--wine);font-size:clamp(15px,3vw,20px);text-align:center;flex:1}.circle-btn{border:1px solid #efb9c9;background:#fff9f7;color:var(--wine);border-radius:50%;width:42px;height:42px;box-shadow:0 5px 14px #a22a4b12}.counter{font-size:12px;color:var(--wine);background:#fff9f7;border:1px solid var(--line);padding:8px 11px;border-radius:99px;white-space:nowrap}
+.screen{display:none;animation:enter .55s ease both}.screen.active{display:block}.hero-card,.paper-card,.photo-card,.memory-card{border:1px solid #f4cbd4;border-radius:26px;background:#fffaf6d9;box-shadow:var(--shadow);overflow:hidden}.hero-card{position:relative;min-height:calc(100vh - 135px);display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:28px 22px;background:linear-gradient(#31163422,#31163455),url('page1-sunset-journey.jpeg') center/cover,#f6c5cc;color:white}.hero-card h1{font:clamp(42px,10vw,68px)/.98 Georgia,serif;margin:0 0 18px;text-shadow:0 3px 16px #4b1737aa;max-width:570px}.date{font-weight:800;font-size:18px;letter-spacing:.08em;margin:0 0 17px}.script{font-family:"Segoe Print","Comic Sans MS",cursive;font-size:clamp(16px,4vw,21px);line-height:1.55;max-width:440px;text-shadow:0 2px 12px #522040aa}.hero-quote{margin:18px auto 20px;font:italic 17px/1.8 Georgia,serif;white-space:pre-line}.song{background:#2a1728b8;border:1px solid #ffffff70;color:#fff;border-radius:99px;padding:12px 16px;margin:5px 0 15px;display:flex;align-items:center;gap:10px}.primary,.secondary{border-radius:99px;padding:14px 20px;font-weight:800;border:0;box-shadow:0 8px 18px #9e20452a;transition:transform .2s,filter .2s}.primary{color:white;background:linear-gradient(100deg,#a51442,#d32b61)}.secondary{color:var(--wine);background:#fffaf6;border:1px solid #efb7c8}.primary:hover,.secondary:hover{transform:translateY(-2px);filter:saturate(1.1)}.wide{width:100%;max-width:440px}.paper-card{padding:24px 20px;position:relative}.eyebrow{text-transform:uppercase;letter-spacing:.14em;color:#b74e71;font-size:11px;font-weight:900;text-align:center;margin:0 0 12px}.screen h2{font:clamp(28px,7vw,42px)/1.08 Georgia,serif;text-align:center;color:var(--wine);margin:0 0 16px}.lead{text-align:center;color:#86586b;font-size:15px;line-height:1.8;margin:0 auto 18px;max-width:550px}.timeline{display:grid;gap:12px;margin:20px 0}.timeline-item{display:grid;grid-template-columns:42px 1fr;gap:12px;align-items:start;padding:12px;background:#fff7f5;border:1px solid #f6d9df;border-radius:18px}.timeline-icon{height:40px;width:40px;border-radius:50%;display:grid;place-items:center;background:linear-gradient(135deg,#bd2c60,#e66c91);color:white;font-size:19px;box-shadow:0 5px 12px #b5265524}.timeline-item strong{display:block;color:var(--wine);font-size:14px;margin:1px 0 4px}.timeline-item p{font-size:13px;line-height:1.55;margin:0;color:#805568}.sticker{position:absolute;opacity:.65;pointer-events:none;font-size:25px;animation:float 4s ease-in-out infinite}.sticker.one{top:18px;left:15px}.sticker.two{right:18px;top:54px;animation-delay:-1s}.sticker.three{bottom:16px;right:22px;animation-delay:-2s}.gif-frame{margin:15px auto 18px;width:min(100%,390px);background:#fff;border:8px solid white;border-radius:23px;box-shadow:0 10px 28px #7e25401c;overflow:hidden}.gif-frame img{display:block;width:100%;max-height:390px;object-fit:cover}.caption{text-align:center;font-weight:800;color:var(--wine);padding:0 12px 12px}.hand-photo{width:100%;display:block;max-height:520px;object-fit:cover;border-radius:18px}.photo-card{padding:10px;background:#fff}.hand-caption{font:italic 17px/1.5 Georgia,serif;text-align:center;padding:13px 8px 9px;color:var(--wine)}.note{padding:16px 18px;border-radius:20px;background:linear-gradient(135deg,#fff1f4,#ffe1e7);border:1px solid #f4c4d1;text-align:center;line-height:1.8;color:#7b4057;margin:18px 0}.note strong{color:var(--wine)}.memories{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin:18px 0}.memory-card{padding:10px;border-radius:18px}.memory-card .emoji{font-size:25px}.memory-card h3{font-size:14px;color:var(--wine);margin:5px 0}.memory-card p{font-size:12px;line-height:1.55;margin:0;color:#82586b}.memory-card img{width:100%;height:110px;object-fit:cover;border-radius:12px;margin-bottom:7px}.ending-photo{position:relative}.ending-photo:after{content:"♡";position:absolute;right:15px;bottom:55px;color:white;font-size:38px;text-shadow:0 2px 9px #802040}.ending-message{font:clamp(16px,4vw,19px)/1.85 Georgia,serif;text-align:center;color:var(--wine);white-space:pre-line}.action-row{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:15px}.action-row .wideish{grid-column:1/-1}.navrow{display:flex;gap:10px;justify-content:space-between;margin:17px 0 0}.navrow button{flex:1}.dots{display:flex;gap:6px;justify-content:center;margin:14px 0}.dot{width:7px;height:7px;border-radius:9px;background:#eab9c7;border:0;padding:0}.dot.active{width:23px;background:#bd2458}.footer{text-align:center;color:#a77a8b;font-size:11px;margin:18px 0 0}.floating{position:fixed;z-index:99;pointer-events:none;bottom:-40px;animation:flyUp 3.6s ease-out forwards;filter:drop-shadow(0 2px 4px #b52c5b2c)}.toast{position:fixed;z-index:100;left:50%;bottom:22px;transform:translateX(-50%);background:#95153d;color:white;border-radius:99px;padding:12px 18px;box-shadow:0 10px 30px #60102f3b;font-size:14px;opacity:0;transition:opacity .25s;pointer-events:none}.toast.show{opacity:1}@keyframes enter{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}@keyframes float{0%,100%{transform:translateY(0) rotate(-4deg)}50%{transform:translateY(-9px) rotate(5deg)}}@keyframes flyUp{0%{transform:translateY(0) rotate(0) scale(.65);opacity:0}10%{opacity:1}100%{transform:translateY(-115vh) rotate(360deg) scale(1.4);opacity:0}}@media(min-width:650px){.app{padding-top:25px}.paper-card{padding:30px 34px}.memories{grid-template-columns:repeat(3,minmax(0,1fr))}.memory-card img{height:125px}}@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation-duration:.01ms!important;animation-iteration-count:1!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+<main class="app">
+  <header class="topbar">
+    <button class="circle-btn" id="backTop" aria-label="Previous page">←</button>
+    <div class="brand">Our Little October Journey ❤️</div>
+    <div class="counter" id="counter">1 / 6</div>
+  </header>
+
+  <section class="screen active" data-page="0">
+    <div class="hero-card">
+      <span class="sticker one">💗</span><span class="sticker two">✨</span><span class="sticker three">🌷</span>
+      <h1>Our Little<br>October Journey ❤️</h1>
+      <p class="date">♥ 23 October ♥</p>
+      <p class="script">Ninnu kalavadaniki vachina<br>oka beautiful roju...</p>
+      <p class="hero-quote">Different places<br>Same hearts<br>Always you... ♡</p>
+      <button class="song" id="musicToggle"><span>♫</span><span>Our Special Song<br><small>(Click to play)</small></span><span id="musicIcon">▶</span></button>
+      <button class="primary wide" onclick="goTo(1)">Mana story loki veldhama? →</button>
+    </div>
+  </section>
+
+  <section class="screen" data-page="1">
+    <div class="paper-card">
+      <span class="sticker one">♡</span><span class="sticker two">🌙</span><span class="sticker three">💞</span>
+      <p class="eyebrow">02 · You waited for me</p>
+      <h2>Naa kosam nuvvu wait chesav 💗</h2>
+      <p class="lead">Nenu vasthunna ani thelisi, mundu roju night kuda padukokunda antha happy ga wait chesav, chinnithalli. 🥹❤️</p>
+      <div class="gif-frame"><img src="page2-waiting-night.jpeg" alt="Cute couple waiting together"><div class="caption">Naa kosam antha happy ga wait chesina naa bangaram 💕</div></div>
+      <div class="gif-frame"><img src="page2-cute-kiss.jpeg" alt="Cute couple kissing illustration"><div class="caption">Nee kosam wait chesthu, ninnu kalavalanukunna aa excitement 💋❤️</div></div>
+      <div class="timeline">
+        <div class="timeline-item"><div class="timeline-icon">🌙</div><div><strong>Mundu roju night padukoledu</strong><p>Naa kosam wait chesthu, manam kalavabothunnam ani happy ga unnav. ❤️</p></div></div>
+        <div class="timeline-item"><div class="timeline-icon">🚆</div><div><strong>Morning 5 ki train ekkannu</strong><p>Nenu train ekkagane jagratha ani cheppavu. Konchem sepu padukunnav, kani malli naa journey track chesthu unnav.</p></div></div>
+        <div class="timeline-item"><div class="timeline-icon">💬</div><div><strong>Calls, texts and care</strong><p>Madhyalo calls, texts chesthu journey ela avthundhi ani aduguthu, jagratha chepthu unnav. 💗</p></div></div>
+        <div class="timeline-item"><div class="timeline-icon">📍</div><div><strong>Station ki speed ga vachav</strong><p>Naa train nee city reach avvakamundhe station ki vachesi, nenu ekkada wait chesthano ani chusukunnav. 🥹</p></div></div>
+      </div>
+      <div class="note">“Naa kosam nuvvu antha care theesukovadam naaku chaala special.” ❤️</div>
+      <div class="navrow"><button class="secondary" onclick="goTo(0)">← Back</button><button class="primary" onclick="goTo(2)">Aa first moment chuddam 🥹 →</button></div>
+    </div>
+  </section>
+
+  <section class="screen" data-page="2">
+    <div class="paper-card">
+      <span class="sticker one">💗</span><span class="sticker two">✨</span><span class="sticker three">♡</span>
+      <p class="eyebrow">03 · Our first moment</p>
+      <h2>Naa cheyi pattukunna aa moment 💗</h2>
+      <p class="lead">Station lo nannu chudagane naa cheyi pattukunnav… aa moment naaku eppatiki special.</p>
+      <div class="gif-frame"><img src="page3-hand-holding-illustration.jpeg" alt="Illustration of a couple holding hands"><div class="caption">Imagine aa moment malli… nee cheyi naa chethilo 🫶</div></div>
+      <div class="gif-frame"><img src="page3-scooty-ride.jpeg" alt="Couple riding a scooter near the railway station"><div class="caption">Nee tho aa challani morning ride 🛵❤️</div></div>
+      <p class="lead">Oka chinna pillodu thappipothadu emo ani jagrathaga nannu pick cheskunnav. Tharvatha nee scooty meedha nee pakkana kurchoni, challani weather lo, cool ga unna morning breeze madhya travel chesthunte… aa feeling chaala peaceful ga, romantic ga undhi. ❤️</p>
+      <div class="note">“Nee pakkana unte, aa simple ride kuda naaku oka beautiful dream la anipinchindi.” 💞</div>
+      <div class="navrow"><button class="secondary" onclick="goTo(1)">← Back</button><button class="primary" onclick="goTo(3)">Nee intlo memories 🏡 →</button></div>
+    </div>
+  </section>
+
+  <section class="screen" data-page="3">
+    <div class="paper-card">
+      <span class="sticker one">🧸</span><span class="sticker two">💕</span><span class="sticker three">🌷</span>
+      <p class="eyebrow">04 · You cared for me</p>
+      <h2>Nannu nee baby la chusukunnav 🧸❤️</h2>
+      <div class="memories">
+        <article class="memory-card"><img src="page4-bears-breakfast.jpeg" alt="Cute couple"><h3>Breakfast time 🍳</h3><p>Naaku aakali ledhu anna kuda chaala saarlu adigi, convince chesi thinipinchav. ❤️</p></article>
+        <article class="memory-card"><img src="page4-bread-omelette.jpeg" alt="Cute comforting characters"><h3>Bread omelette 🍞</h3><p>Nenu bread omelette cook chesanu, nuvvu pakkana undi help chesav. 💗</p></article>
+        <article class="memory-card"><img src="page4-feeding-each-other.jpeg" alt="Cute couple together"><h3>Lunch with your care 🍚</h3><p>Nee chethitho food kalipi, kadupu ninda thinipinchav. 🥹</p></article>
+        <article class="memory-card"><img src="page4-cozy-couple.jpeg" alt="Cozy couple"><h3>Pakkapakkana time 💻</h3><p>Office work cheskuntu, kaburlu cheppukuntu pakkana kurchunnam. ❤️</p></article>
+        <article class="memory-card"><img src="page4-feeding-each-other.jpeg" alt="Warm hug"><h3>Home feeling 🏡</h3><p>Amma thana baby ki thinipinchinattu naaku anipinchindi. Aa care chaala special. 💞</p></article>
+        <article class="memory-card"><img src="page2-cute-kiss.jpeg" alt="Cute kiss"><h3>Little moments 💗</h3><p>Simple moments aina, nee pakkana undatam naaku chaala happy ga anipinchindi.</p></article>
+      </div>
+      <div class="note">“Nuvvu naaku food thinipinchina aa feeling lo oka amma laanti care feel ayyanu, chinnithalli.” ❤️</div>
+      <div class="navrow"><button class="secondary" onclick="goTo(2)">← Back</button><button class="primary" onclick="goTo(4)">Mana little city date ☕ →</button></div>
+    </div>
+  </section>
+
+  <section class="screen" data-page="4">
+    <div class="paper-card">
+      <span class="sticker one">🌷</span><span class="sticker two">💗</span><span class="sticker three">✨</span>
+      <p class="eyebrow">05 · Our city date</p>
+      <h2>Nee city lo mana memories 🌿❤️</h2>
+      <div class="memories">
+        <article class="memory-card"><img src="page5-clubhouse-pool.jpeg" alt="Apartment clubhouse pool"><div class="emoji">🏢</div><h3>Apartment & clubhouse</h3><p>Chupinchav, mee marriage jarigina place kuda. 💗</p></article>
+        <article class="memory-card"><img src="page5-indoor-pool.jpeg" alt="Indoor swimming pool"><div class="emoji">🏊</div><h3>Gym & swimming pool</h3><p>Explore chesam, nee world naatho share chesav. ❤️</p></article>
+        <article class="memory-card"><img src="page5-balaji-sweets.jpeg" alt="Balaji sweets shop"><div class="emoji">🍬</div><h3>Balaji sweets</h3><p>Mee vallakosam nee favourite sweets konnav. 💗</p></article>
+        <article class="memory-card"><img src="page5-toys.jpeg" alt="Toys for kids"><div class="emoji">🧸</div><h3>Toys for kids</h3><p>Naa sister pillala kosam cute toys theesukunnav. 🥹</p></article>
+        <article class="memory-card"><img src="page5-tea-cafe.jpeg" alt="Tea cafe"><div class="emoji">☕</div><h3>Tea café</h3><p>Naaku ishtam ani antha dooram theesukellav. Chala tasty tea. ❤️</p></article>
+        <article class="memory-card"><img src="page5-scooty.jpeg" alt="Scooty"><div class="emoji">🛵</div><h3>Scooty petrol & repair</h3><p>Naduchukuntu velli petrol thesam, tarvatha pipe issue repair cheyinchukunnam. 😂</p></article>
+      </div>
+      <div class="gif-frame"><img src="page5-couple-holding-hands.jpeg" alt="Cute couple holding hands"><div class="caption">Ivanni chinna chinna panulu aina mana story lo special memories ayyayi 💕</div></div>
+      <p class="lead">Nee favourite places anni chupinchav. Tea kosam chaala dooram theesukellav. Scooty petrol ayipoyindi, bunk ki naduchukuntu vellam, petrol pipe issue vachindi, repair cheyinchukoni malli bayaluderam. Ippudu alochisthe, ivanni kuda cute memories aipoyayi. ❤️</p>
+      <div class="navrow"><button class="secondary" onclick="goTo(3)">← Back</button><button class="primary" onclick="goTo(5)">Inka oka emotional memory 🚆 →</button></div>
+    </div>
+  </section>
+
+  <section class="screen" data-page="5">
+    <div class="paper-card">
+      <span class="sticker one">💗</span><span class="sticker two">🚆</span><span class="sticker three">🫂</span>
+      <p class="eyebrow">06 · Until we meet again</p>
+      <h2>Nannu pampinche mundhu nee care 🥹❤️</h2>
+      <div class="gif-frame"><img src="page6-station-hug.jpeg" alt="Cute couple hugging at a railway station"><div class="caption">Ninnu pampinche mundhu oka big hug 🫂❤️</div></div>
+      <div class="photo-card ending-photo">
+        <img class="hand-photo" src="page6-real-hand-holding.jpeg" alt="Our real hand-holding memory from 23 October">
+        <div class="hand-caption">“I don't want to let go… ♡”</div>
+      </div>
+      <p class="lead">Naa return train time ayyesariki station ki vellam. Akkada kuda naa cheyi pattukoni, naatho kaburlu chepthu, train vache varaku naa pakkane unnave. ❤️</p>
+      <div class="timeline">
+        <div class="timeline-item"><div class="timeline-icon">❤️</div><div><strong>Enni saarlu “Jagratha” cheppav</strong><p>Nannu train ekkinchi pampinche varaku naa cheyi pattukoni unnave. 🥹</p></div></div>
+        <div class="timeline-item"><div class="timeline-icon">💬</div><div><strong>Train ekkinchi pampinchav</strong><p>Train vachaka nannu ekkinchi, malli jagratha ani cheppav. ❤️</p></div></div>
+        <div class="timeline-item"><div class="timeline-icon">📱</div><div><strong>Hyderabad reach ayye varaku</strong><p>Calls, texts lo naatho matladuthu, nenu intiki reach ayye varaku care theesukunnav. 💗</p></div></div>
+        <div class="timeline-item"><div class="timeline-icon">🏡</div><div><strong>Intiki reach ayye varaku</strong><p>Dooram lo unna kuda nee care naatho paatu vachindi. ❤️</p></div></div>
+      </div>
+      <div class="gif-frame"><img src="page2-cute-kiss.jpeg" alt="Cute AI-style couple sharing a kiss"><div class="caption">Oka cute kiss nee kosam, chinnithalli 💋❤️</div></div>
+      <div class="note ending-message">Chinnithalli, aa roju ninnu kalavadam naaku chaala chaala happy ga anipinchindi. 💗
+
+Distance unna, aa roju nuvvu naaku ichina love, care, happiness eppatiki naatho untayi.
+
+<strong>Nuvvu naaku oka beautiful journey ichav. Thank you, naa bangaram. I love you. ❤️</strong></div>
+      <div class="action-row">
+        <button class="primary wideish" onclick="sendHearts(28);showToast('One big virtual hug for you, chinnithalli! 🫂❤️')">🤍 One big hug 🫂</button>
+        <button class="secondary" onclick="sendKisses()">Kiss kiss 💋</button>
+        <button class="secondary" onclick="surprise()">🎁 One more surprise 💗</button>
+      </div>
+      <div class="navrow"><button class="secondary" onclick="goTo(4)">← Back to our memories</button><button class="primary" onclick="goTo(0);sendHearts(12)">Replay our story ↻</button></div>
+    </div>
+  </section>
+  <div class="dots" id="dots" aria-label="Page navigation"></div>
+  <p class="footer">Made with love for my chinnithalli · 23 October ❤️</p>
+</main>
+<div class="toast" id="toast"></div>
+<script>
+const screens=[...document.querySelectorAll('.screen')],counter=document.getElementById('counter'),dots=document.getElementById('dots');let current=0;
+screens.forEach((_,i)=>{const b=document.createElement('button');b.className='dot'+(i===0?' active':'');b.setAttribute('aria-label','Go to page '+(i+1));b.onclick=()=>goTo(i);dots.appendChild(b)});
+function goTo(n){current=Math.max(0,Math.min(screens.length-1,n));screens.forEach((s,i)=>s.classList.toggle('active',i===current));counter.textContent=(current+1)+' / '+screens.length;[...dots.children].forEach((d,i)=>d.classList.toggle('active',i===current));document.getElementById('backTop').style.visibility=current===0?'hidden':'visible';window.scrollTo({top:0,behavior:'smooth'})}
+document.getElementById('backTop').onclick=()=>goTo(current-1);
+function sendHearts(n=20){const emojis=['❤️','💗','💕','💖','💞','✨','🌷'];for(let i=0;i<n;i++)setTimeout(()=>{const e=document.createElement('span');e.className='floating';e.textContent=emojis[Math.floor(Math.random()*emojis.length)];e.style.left=Math.random()*96+'vw';e.style.fontSize=(18+Math.random()*25)+'px';e.style.animationDuration=(2.7+Math.random()*1.8)+'s';document.body.appendChild(e);setTimeout(()=>e.remove(),4800)},i*75)}
+function sendKisses(){sendHearts(30);showToast('Mwahhh! So many kisses for you 💋💗')}
+function surprise(){sendHearts(38);showToast('Nuvvu naaku chaala special, chinnithalli. I love you! ❤️')}
+let toastTimer;function showToast(message){const t=document.getElementById('toast');t.textContent=message;t.classList.add('show');clearTimeout(toastTimer);toastTimer=setTimeout(()=>t.classList.remove('show'),3200)}
+// A friendly music control: it does not auto-play. Add your own royalty-free song file as our-song.mp3 to enable it.
+document.getElementById('musicToggle').addEventListener('click',()=>{let audio=document.getElementById('journeyAudio');if(!audio){audio=document.createElement('audio');audio.id='journeyAudio';audio.src='our-song.mp3';audio.loop=true;document.body.appendChild(audio);audio.addEventListener('error',()=>showToast('Add your favourite song as our-song.mp3 to enable music 🎵'))}if(audio.paused){audio.play().then(()=>{document.getElementById('musicIcon').textContent='❚❚';showToast('Playing your special song 🎵')}).catch(()=>showToast('Add your favourite song as our-song.mp3 to enable music 🎵'))}else{audio.pause();document.getElementById('musicIcon').textContent='▶'}});
+goTo(0);
+</script>
+</body>
+</html>
