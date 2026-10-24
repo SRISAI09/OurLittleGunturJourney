@@ -27,7 +27,17 @@ button{font:inherit;cursor:pointer}.app{width:min(100%,720px);margin:auto;min-he
       <p class="date">♥ 23 October ♥</p>
       <p class="script">Ninnu kalavadaniki vachina<br>oka beautiful roju...</p>
       <p class="hero-quote">Different places<br>Same hearts<br>Always you... ♡</p>
-      <button class="song" id="musicToggle"><span>♫</span><span>Our Special Song<br><small>(Click to play)</small></span><span id="musicIcon">▶</span></button>
+      <button class="song" id="musicToggle">
+  <span>♫</span>
+  <span>Our Special Song<br><small>(Click to play)</small></span>
+  <span id="musicIcon">▶</span>
+</button>
+
+<audio id="specialSong" preload="none">
+  <source src="Kadalalle.mp3" type="audio/mpeg">
+</audio>
+
+<button class="primary wide" onclick="goTo(1)">Mana story loki veldhama? ✨</button>
       <button class="primary wide" onclick="goTo(1)">Mana story loki veldhama? →</button>
     </div>
   </section>
@@ -149,6 +159,24 @@ let toastTimer;function showToast(message){const t=document.getElementById('toas
 // A friendly music control: it does not auto-play. Add your own royalty-free song file as our-song.mp3 to enable it.
 document.getElementById('musicToggle').addEventListener('click',()=>{let audio=document.getElementById('journeyAudio');if(!audio){audio=document.createElement('audio');audio.id='journeyAudio';audio.src='our-song.mp3';audio.loop=true;document.body.appendChild(audio);audio.addEventListener('error',()=>showToast('Add your favourite song as our-song.mp3 to enable music 🎵'))}if(audio.paused){audio.play().then(()=>{document.getElementById('musicIcon').textContent='❚❚';showToast('Playing your special song 🎵')}).catch(()=>showToast('Add your favourite song as our-song.mp3 to enable music 🎵'))}else{audio.pause();document.getElementById('musicIcon').textContent='▶'}});
 goTo(0);
+
+const musicToggle = document.getElementById("musicToggle");
+const specialSong = document.getElementById("specialSong");
+const musicIcon = document.getElementById("musicIcon");
+
+musicToggle.addEventListener("click", () => {
+  if (specialSong.paused) {
+    specialSong.play();
+    musicIcon.textContent = "⏸";
+  } else {
+    specialSong.pause();
+    musicIcon.textContent = "▶";
+  }
+});
+
+specialSong.addEventListener("ended", () => {
+  musicIcon.textContent = "▶";
+});
 </script>
 </body>
 </html>
